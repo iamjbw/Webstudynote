@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .s1{
+            color: red;
+            background-color: blue;
+        }
+        form .s1:hover{
+            color: green;
+            opacity: 0.2;/*表示透明度*/
+        }
+        .d1{
+            display: block;/*隐藏*/
+        }
+        .d2{
+            display: none;/*出现*/
+        }
+        .d1:hover .d2{
+            /*background-color: black;*/
+            display: block;
+        }
+        /*设置文本对齐可以使用span，给span设定同一个宽度就可以对齐了,需要在样式里加入display:inline-block*/
+        /*label标签用于绑定表单，点击文字时获得焦点，点击文字就可以直接得到输入焦点*/
+    </style>
+</head>
+<body>
+<!--&lt;!&ndash;表单及表单控件&ndash;&gt;&lt;!&ndash;get会将表单中所有数据写到地址栏里，post则不&ndash;&gt;-->
+<!--<form action="" method="post">&lt;!&ndash;将表单内容提交到action的地址里，可以为空,为空则为提交当前页&ndash;&gt;-->
+<!--&lt;!&ndash;method为提交方式，默认为get&ndash;&gt;-->
+    <!--用户名：<input type="text" name="user" class="s1">&lt;!&ndash;type类型为text的类型成为文本输入控件，用于输入文本&ndash;&gt;-->
+    <!--<br>-->
+    <!--密码 ：<input type="password" name="pwd">&lt;!&ndash;type类型为password用于输入密码&ndash;&gt;-->
+    <!--<br>-->
+    <!--&lt;!&ndash;<button>登陆</button>&ndash;&gt;-->
+    <!--<input type="button" value="登陆按钮" name="button">&lt;!&ndash;tyoe类型为button用于设置登陆按钮，value的值为按钮显示文本&ndash;&gt;-->
+    <!--<br>-->
+    <!--<input type="submit" value="登陆">&lt;!&ndash;submit会将所有输入框里的值提交给method中的地址&ndash;&gt;-->
+    <!--<br>&lt;!&ndash;提交后会使整个网页进行刷新&ndash;&gt;-->
+    <!--<input type="reset" value="重置">&lt;!&ndash;reset为重置按钮&ndash;&gt;-->
+    <!--&lt;!&ndash;单选控件&ndash;&gt;-->
+    <!--性别<input type="radio" value="boy" name="s1">男 &lt;!&ndash;value中的值供后台提取&ndash;&gt;-->
+    <!--<input type="radio" value="girl" name="s1">女-->
+    <!--<br>-->
+    <!--&lt;!&ndash;复选控件&ndash;&gt;-->
+    <!--爱好：<input type="checkbox" name="s2" value="xx">学习-->
+    <!--<input type="checkbox" name="s2" value="yx">游戏-->
+    <!--<input type="checkbox" name="s3" value="sj">睡觉-->
+    <!--<input type="checkbox" name="s4" value="tw">跳舞-->
+    <!--&lt;!&ndash;下拉列表-->
+    <!--multiple 多选-->
+    <!--selected 默认被选中-->
+
+    <!--&ndash;&gt;-->
+    <!--<select>-->
+        <!--<option>北京</option>-->
+        <!--<option>上海</option>-->
+        <!--<option selected>广州</option>-->
+    <!--</select>-->
+    <!--<br>-->
+    <!--&lt;!&ndash;单复选控件中被选中属性为 checked&ndash;&gt;-->
+    <!--<input type="radio" name="s1" value="s" checked>b-->
+    <!--<input type="radio" name="s1" value="s">g-->
+    <!--<input type="radio" name="s1" value="s">s-->
+    <!--<br>-->
+    <!--&lt;!&ndash;多行文本-->
+    <!--cols rows分别表示其所占的列行数-->
+    <!--&ndash;&gt;-->
+    <!--简介：<textarea cols="" rows="" style="height: 500px;width: 300px;">-->
+
+    <!--</textarea>-->
+    <!--&lt;!&ndash;图片上传&ndash;&gt;-->
+    <!--图片（文件）上传<input type="file">-->
+    <!--&lt;!&ndash;隐藏控件&ndash;&gt;-->
+    <!--<input type="hidden">用于隐秘的传递一些参数给后台-->
+
+<!--</form>-->
+<!--<div class="d1" style="width: 100px;height: 100px;background-color: red;float: left">-->
+    <!--<div class="d2" style="width: 100px;height: 100px;background-color: green;float: left"></div>-->
+<!--</div>-->
+
+<!--ht>ml5 表单控件 测试其兼容性，看哪个浏览器支持，大部分都支持就可以用-->
+<form action="用于提交切换页面"><!--active伪类用于被选中动态-->
+<input type="url" name="myurl"><!--网址控件-->
+    email<input type="email" >
+    <br>
+    date<input type="date" value="2012-1-1">
+    <br>
+    time<input type="time">
+    <br>
+    datetime<input type="datetime">
+    <br>
+    local<input type="datetime-local">
+    <br>
+    month<input type="month">
+    <br>
+    week<input type="week">
+    <br>
+    <input type="number"><!--数字控制-->
+    <br>
+    <input type="tel">
+    <br>
+    <input type="range" value="30" min="0" max="100" step="3">
+    <br>
+    <input type="color"><!--调用windos色块-->
+    <br>
+    <input type="search">
+    <input type="submit" name="" value="提交">
+<br>
+    <div class="d3"
+         style="width: 200px;height: 200px;border: 1px solid black;
+         box-shadow:inset/*内阴影，不写默认为外阴影*/ 10px 10px 10px 10px red"
+    ><!--水平偏移量，垂直偏移量，阴影模糊度，阴影大小，颜色-->
+    </div>
+    <div class="d4"></div>
+</form>
+</body>
+</html>

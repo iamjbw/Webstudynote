@@ -1,0 +1,117 @@
+//@a:red;
+//@b:50px;
+//@c:50-10px;
+//.a1{
+//  width: @b;
+//  height: @c;
+//  background: @a;
+//}
+//.a2{
+//  .a1;/*代码作用为从上往下，读取下方的代码使其生效，如果上方有相同类型则失效*/
+//  margin-left: 20px;
+//  width: 20px;
+//  height: 500px;
+//}
+//.a1(@a,@b,@c,@d){/*另外一种定义方法，这样的设置类似于一个模板，减少代码量，在其他的选择器中可以直接引用，直接修改里面的值即可*/
+//  width:@a;
+//  height: @b;
+//  border:@c;
+//  background-color: red;
+//  margin: @d;
+//}
+//.a2{
+//  .a1(100px,300px,1px solid black,100px 200px 3px 4px)
+//}
+//?
+//.p(@a:5px,@b:100px,@c:10px,@d:20px,@e:blue){/*argument变量代表所设置的所有变量a,b,c,d*/
+//  box-shadow: @argument;
+//
+//}
+//.a1{
+//  background-color: red;
+//  width: 20px;
+//  height: 20px;
+//  .p()
+//}
+//?
+/*模式匹配与Guard表达*/
+//.a(dark,@color){
+//  background-color:darken(@color,10%);
+//}
+//.a(light,@color){
+//  background-color:lighten(@color,10%);
+//}
+//.a(@_,@color){/*@_为执行所有变量的函数*/
+//  background-color:lighten(@color,10%);
+//}
+//@switch:light;
+//.a1{
+//  .a(@switch,red);
+//  width: 200px;
+//  height: 200px;
+//}
+//Guards
+//使用when来判定
+//.a(@a)when(lightness(@a)>=50%){
+//  background-color: black;
+//  color: white;
+//}
+//.a(@a)when(lightness(@a)<50%){
+//  background-color: white;
+//  color: black;
+//}
+//.a2{
+//  .a(#ddd);
+//  width: 100px;
+//  height: 100px;
+//}
+/*嵌套  嵌套是为了继承父类里的元素*/
+//.a1{
+//  color: black;
+//  .b1{
+//    font-size: 20px;
+//  }
+//  .b2{
+//    width: 200px;
+//    &:hover{ /* 使用伪类时一般使用 & 表示父类*/
+//      text-decoration: none;
+//    }
+//  }
+//}
+// &（父类元素） 的用法
+//.a,.b{
+//  .c &{
+//    color: black;  /*输出代码为：.c .a，.c .b{color:black;}*/
+//  }
+//}
+//
+//.a{
+//  .b; /*意思是将b中的样式属性赋予a*/
+//}
+//
+//.a{
+//  .b &{ /*意思是将a的样式属性赋予b*/
+//
+//  }
+//}
+//运算
+//@a:5%;
+//@b:(@a*2);
+//@c:(@a+b);
+//@var:(#ddd+black);
+//函数引用
+//@a:#ddd;
+//@b:0.5;
+//.class{
+//  width:percentage(@b);
+//  color: sature(@a,%5);
+//}
+//命名空间
+//.a{
+//  .a1{...}
+//  .a2{...}
+//  .a3{...}
+//}
+//.b{
+//  .a>.a1 /*意思为b中使用了a中除a1外的其他*/
+//}

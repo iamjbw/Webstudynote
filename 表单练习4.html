@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            font: bold 20px "黑体";
+
+        }
+        input{
+            border: 1px solid darkgray;
+            color: darkgray;
+            height: 20px;
+            border-radius:6px;
+            background: url("images/2.png") no-repeat right;
+
+        }
+        .i2{
+            border-radius: 6px;
+        }
+        .i1:focus{
+            border: 1px solid darkgray;
+            border-radius:6px;
+            width: 200px;
+            height: 25px;
+            box-shadow: 2px 2px 5px 5px darkgray;
+            background: url("images/1.png") no-repeat right;
+        }
+    </style>
+</head>
+<body>
+<form>
+    Name:<br>
+    <input type="text" value="name" class="i1">
+    <br><br>
+    Email:<br>
+    <input type="email" value="email@chinaz.com" class="i1">
+    <br><br>
+    Website:<br>
+    <input type="url" value="http://www.update8.com" class="i1">
+    <br><br>
+    Number:<br>
+    <input type="number" value="Even num<10" class="i1">
+    <br><br>
+    Range:<br>
+    <input type="range" value="30" min="0" max="45">
+    <br>
+    Message:<br>
+    <textarea cols="22" rows="15" class="i2"></textarea>
+</form>
+</body>
+</html>

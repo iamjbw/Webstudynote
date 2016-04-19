@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--
+    标准流static:css规定的默认的块级元素与行级元素的排列方式
+    display: inline-block;/*可以将块级元素转变为行级元素*/
+    display: block;/*可以将行级元素转变为块级元素*/
+    display: inline-block;/*对行级元素使用，可以得到行级块元素，仍是行级元素，但是具有块级元素的功能(更改宽高之类)*/
+    display:run-in 查询其用法
+    -->
+    <!--display 与 visibility 的区别
+            display特点为不占用空间
+            display: none;/*元素不显示，类似于此元素没了*/
+            display: block;/*元素显示，与none为相反的一对*/
+            visibility特点为占用空间
+            visibility: hidden;/*元素透明，还保留此元素的位置的样式，只是透明了*/
+            visibility: visible;/*元素不透明，与hidden为相反的一对*/
+    -->
+    <style>
+
+        .d1,.d2{
+            border: 1px solid black;
+        }
+        .d1{
+            display: none;/*元素不显示，类似于此元素没了*/
+            display: block;/*元素显示，与none为相反的一对*/
+            visibility: hidden;/*元素透明，还保留此元素的位置的样式，只是透明了*/
+            visibility: visible;/*元素不透明，与hidden为相反的一对*/
+        }
+        .s1,.s2{
+            border: 1px solid black;
+            display: inline-block;/*对行级元素使用，可以得到行级块元素，仍是行级元素，但是具有块级元素的功能(更改宽高之类)*/
+
+        }
+        .d3{
+            border: 1px solid black;
+            display: inline-block;/*对块级元素使用，可以得到块级行元素，具有行元素的属性（可以水平排列）*/
+        }
+        li{
+            border: 1px solid black;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+<div class="d1">hello</div> <!--div，ul,li,p,dd,dt,dl是块级元素block,每块撑满一整行，与兄弟元素不能通行并列（垂直排列）-->
+<div class="d2">hellooo</div>
+<input class="d2">heiheihei</input>
+<a class="s1">hellossss hello</a> <!--span，a,img,input为行级元素inline，占据一块，可以同行并列（水平排列），内容自适应不会撑满-->
+<span class="s2">hello hello</span><!--input,img可以更改宽高，但是确实为行级元素，属于特例--><!--重点-->
+<ul>
+    <li>
+        aaaaaa
+        <div class="d3">bbb</div>
+    </li>
+</ul>
+</body>
+</html>

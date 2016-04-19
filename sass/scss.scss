@@ -1,0 +1,14 @@
+$a:red;
+$d:200px;
+$nav-color:#ddd;
+.d1{
+width: $d ;
+  height: 200px;
+  background-color: $nav-color;
+  .d2{
+    border: 1px solid black{
+      top: 10px solid red;
+      left: none;
+    }
+  }
+}

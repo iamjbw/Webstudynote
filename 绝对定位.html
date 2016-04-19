@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+    1、绝对定位脱离标准流
+    2、绝对定位的基准点相对于浏览器进行定位，如有祖先元素有定位，则以离它最近的有定位的祖先元素为基准点（父级，爷爷级....）
+    3、多个元素绝对定位，后面定位的元素层级会高于前面的（覆盖）
+    4、Z-index  设定层级
+    position:static // 恢复为标准流 即取消定位
+    -->
+    <style>
+        .d1{
+            width:100px;
+            height: 100px;
+            background-color: black;
+            position: absolute;
+            z-index:2;
+        }
+        .d2{
+            width:50px;
+            height: 50px;
+            background-color:red;
+            position: absolute;
+        }
+        .d3{
+            width:20px;
+            height: 20px;
+            background-color:green;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<div class="d1">
+    <div class="d2">
+        <div class="d3">
+        </div>
+        </div>
+</div>
+</body>
+</html>

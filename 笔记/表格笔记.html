@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--表格-->
+    <style>
+        table{
+            /*border: 1px solid yellow;*/
+            width: 300px;
+            height: 300px;
+            table-layout: fixed;/*固定表格布局*/
+            /*border-collapse: collapse;!*使表格边框变为1px 表格边框合成为单一边框  默认为separate*!*/
+            /*border-spacing: 10px 30px;!*调整单元格之间的间距 第一个为宽（水平） 第二个为高（垂直）*!*/
+            text-align: center;/*用于调整水平方向的对齐方式，默认为left  可使用 center right*/
+            empty-cells: hide;/*空单元格显示或不显示，但当使用了border-collapse属性，即使使用也要使用默认，否则设置单元格属性失败*/
+        }
+        table td{
+            border: 1px solid black;
+            vertical-align: top;/*此样式是使用于表格，放于单元格里或者单元格样式中，用于垂直对齐，top middle bottom，默认为middle*/
+        }
+        /*伪类：hover--鼠标悬停(可以使用简单的动画效果)*/
+        table tr td:hover{
+            background-color: black;
+        }
+        </style>
+</head>
+<table cellspacing="0"><!--单元格空隙-->
+    <!--如何让表格边框变为1px?
+     方法1：用边框的上下左右调整
+     方法2：border-collapse:collapse
+    -->
+    <tr>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+    </tr><!--th用于来做表头,标准表格最好的表头，表头可以再tr做行表头也可以再td前做列表头-->
+    <tr><!--tr行-->
+        <td colspan="2">a1</td><!--列--><!--td内的colspan用于列合并，此处合并2列-->
+        <!--<td>a2</td>-->
+        <td>a3</td>
+    </tr>
+    <tr>
+        <td rowspan="2">b1</td><!--td内写入rowspan进行合并-->
+        <td>b2</td>
+        <td>b3</td>
+    </tr>
+    <tr>
+
+        <td>c2</td>
+        <td>c3</td>
+    </tr>
+
+</table>
+</body>
+</html>

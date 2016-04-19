@@ -1,0 +1,10 @@
+.d1 {
+  width: 200px;
+  height: 200px;
+  background-color: #ddd; }
+  .d1 .d2 {
+    border: 1px solid black;
+      border-top: 10px solid red;
+      border-left: none; }
+
+/*# sourceMappingURL=scss.css.map */

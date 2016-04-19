@@ -1,0 +1,261 @@
+.big {
+  width: 1000px;
+  height: 800px;
+  border: none;
+  float: none;
+  background-color: #b4daef;
+  margin: -10px 100px;
+}
+.mid {
+  width: 800px;
+  height: 800px;
+  border: none;
+  float: none;
+  position: relative;
+  top: 30px;
+  left: 110px;
+}
+.t1 {
+  border-radius: 2px;
+  width: 770px;
+  height: 290px;
+  border: none;
+  float: none;
+  background-color: white;
+}
+.l {
+  margin-top: 20px;
+  width: 252px;
+  height: 300px;
+  border: none;
+  float: left;
+}
+.l1 {
+  border-radius: 2px;
+  width: 252px;
+  height: 50px;
+  border: none;
+  float: none;
+  background-color: white;
+}
+.l2 {
+  border-radius: 2px;
+  margin-top: 20px;
+  width: 252px;
+  height: 100px;
+  border: none;
+  float: none;
+  background-color: white;
+}
+.l3 {
+  border-radius: 2px;
+  margin-top: 20px;
+  width: 252px;
+  height: 165px;
+  border: none;
+  float: none;
+  background-color: white;
+}
+.r {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 500px;
+  height: 200px;
+  border: none;
+  float: left;
+}
+.r1 {
+  border-radius: 2px;
+  width: 496px;
+  height: 32px;
+  border: none;
+  float: none;
+  background-color: #f2f2f4;
+}
+.r2 {
+  border-radius: 2px;
+  margin-top: 15px;
+  width: 496px;
+  height: 200px;
+  border: none;
+  float: none;
+  background-color: white;
+}
+.s1 {
+  text-align: center;
+  width: 100px;
+  height: 35px;
+  border: none;
+  float: none;
+  display: inline-block;
+  margin-left: 150px ;
+  border-bottom: 2px solid #fd5a05;
+  font-weight: bolder;
+  line-height: 30px;
+}
+.s2 {
+  text-align: center;
+  width: 200px;
+  height: 20px;
+  border: none;
+  float: none;
+  display: inline-block;
+}
+.s3 {
+  text-align: center;
+  width: 200px;
+  height: 20px;
+  border: none;
+  float: none;
+  display: inline-block;
+}
+.l01,
+.l02 {
+  width: 220px;
+  height: 20px;
+  border: none;
+  float: none;
+  display: inline-block;
+}
+table{
+  width: 200px;
+  border-collapse: collapse;
+  text-align: center;
+  position: relative;
+  top: 5px;
+  left: 10px;
+}
+.td1{
+  font-weight: bold;
+  height: 10px;
+  border-right: 1px solid darkgray;
+
+}
+.td2{
+  border-right: 1px solid darkgray;
+  color: dimgray;
+}
+.i1 {
+  width: 220px;
+}
+.g1 {
+  width: 120px;
+  height: 20px;
+  border: none;
+  float: left;
+  border-radius: 1px;
+  border-bottom: 3px solid #fba87f ;
+  font-size: 10px;
+  margin-top: 40px ;
+  margin-left: 10px;
+}
+.g2 {
+  width: 110px;
+  height: 20px;
+  border: none;
+  float: left;
+  border-radius: 1px;
+  border-bottom: 3px solid darkgray ;
+  margin-top: 22px;
+}
+.s4 {
+  font: italic bolder 18px 黑体;
+}
+.s5 {
+  font-size: 10px;
+  position: relative;
+  top: 10px;
+  left: -120px;
+}
+.lv {
+  width: 40px;
+  height: 20px;
+  border: 2px solid #fdb402;
+  float: none;
+  font: bold 10px 黑体;
+  color: white;
+  background-color: #fdb402;
+  border-radius: 20px;
+}
+.g0 {
+  width: 252px;
+  height: 20px;
+  border: none;
+  float: none;
+  font-size: 10px;
+  margin-top: 55px;
+  border-top: 1px solid darkgray;
+  text-align: center;
+}
+.gk {
+  width: 252px;
+  height: 20px;
+  border: none;
+  float: none;
+  font: bold 15px 黑体;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.gx {
+  font: bold 13px 黑体;
+  margin-left: 10px;
+}
+.b {
+  margin-left: 105px;
+}
+.gd {
+  width: 252px;
+  height: 20px;
+  float: none;
+  font-size: 10px;
+  margin-top: 55px;
+  border-top: 1px solid darkgray;
+  text-align: center;
+  border: none;
+  margin-top: 0px;
+}
+.j3 {
+  border-radius: 2px;
+  margin-top: 15px;
+  width: 496px;
+  height: 200px;
+  float: none;
+  background-color: white;
+  border-radius: 0px;
+  margin: 0px;
+  border: none;
+}
+.qb {
+  width: 60px;
+  height: 30px;
+  border: none;
+  float: left;
+  background-color: white;
+  text-align: center;
+  line-height: 30px;
+  border-right: 1px solid darkgray;
+  border-bottom: 2px solid #fe5702;
+}
+.mo {
+  line-height: 30px;
+}
+.ss {
+  margin-top: -25px;
+  float: right;
+  color: darkgray;
+  background-color: white;
+}
+.bg {
+  width: 30px;
+  height: 19px;
+  border: none;
+  float: left;
+  margin-top: -26px;
+  margin-left: 465px;
+}
+.hh {
+  width: 252px;
+  height: 95px;
+  border: none;
+  float: none;
+}

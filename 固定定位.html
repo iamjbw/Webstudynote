@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--固定定位 (只有相对定位不会脱离标准流)
+    1、position:fixed; 表示固定定位
+    2、脱离了标准流
+    3、定位元素是以浏览器窗口或其他显示设备窗口边界为基准进行偏移
+    4、固定定位元素对浮动元素依然有效
+
+    -->
+    <style>
+        .d1{
+            width:100px;
+            height:100px;
+            background: red;
+            position: fixed;
+
+        }
+        .d2{
+            width: 200px;
+            height: 2000px;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="d1"></div>
+<div class="d2"></div>
+</body>
+</html>

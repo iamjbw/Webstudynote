@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .t1{
+            width: 800px;
+            height: 600px;
+            /*border:1px solid black;*/
+            border-spacing: 10px 0px;
+            table-layout: fixed;
+        }
+        .t1 tr td{
+            border:1px solid black;
+        }
+        .t1 tr .td1{
+            width:20%;
+        }
+        .t1 tr .td2{
+            width:30%;
+        }
+
+        .t1 tr .td3{
+            width:30%;
+        }
+
+        .t1 tr .td4{
+            width:20%;
+        }
+        .t2{
+            width:145px;
+            height: 600px;
+
+        }
+        .t2 .tr1{
+            border: 1px solid black;
+            width: 145px;
+            height: 120px;
+        }
+        .t2 .tr2{
+            border: 1px solid black;
+            width: 145px;
+            height: 200px;
+        }
+        .t2 .tr3{
+            border: 1px solid black;
+            width: 145px;
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+<table class="t1">
+    <tr>
+        <td class="td1">
+            <table class="t2">
+                <tr class="tr1">
+                    <td></td>
+                </tr>
+                <tr class="tr2">
+                    <td></td>
+                </tr>
+                <tr class="tr3">
+                    <td></td>
+                </tr>
+            </table>
+        </td>
+        <td class="td2"></td>
+        <td class="td3"></td>
+        <td class="td4"></td>
+    </tr>
+</table>
+</body>
+</html>

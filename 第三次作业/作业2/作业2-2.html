@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            width: 1000px;
+            height: 1000px;
+        }
+        .d2{
+            width: 160px;
+            height: 65px;
+            float: left;
+            line-height: 80px;
+            border-bottom: 2px solid darkgray;
+            text-align: center;
+        }
+        .d1{
+            width: 160px;
+            height: 65px;
+            float: left;
+            line-height: 80px;
+            border-bottom: 2px solid darkgray;
+            text-align: center;
+            border-bottom: 2px solid #ff4103;
+        }
+        .i1{
+            position: relative;
+            top: 8px;
+        }
+        .d0{
+            width: 640px;
+            height: 300px;
+            border: 2px solid darkgray;
+            border-top:2px solid #ff4103;
+            box-shadow: 0px 1px 5px 0px darkgray;
+        }
+        .s1{
+            width: 600px;
+            height: 20px;
+            background: url("叉.png")  no-repeat right;
+            display: inline-block;
+            margin: 15px 15px ;
+        }
+        .s2{
+            width: 600px;
+            height: 20px;
+            display: inline-block;
+            margin: 0px 15px ;
+        }
+        .s3{
+            width: 250px;
+            height: 20px;
+            display: inline-block;
+            margin: 0px 15px ;
+            text-align: right;
+        }
+        .i2{
+            width: 100px;
+            height: 35px;
+            font-size: 20px;
+
+        }
+        .s4{
+            width: 130px;
+            height: 44px;
+            background-color: #ededed;
+            display: inline-block;
+            line-height: 45px;
+            color: darkgray;
+            border-radius: 5px;
+        }
+        .b1{
+            width: 100px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: #ff4103;
+            color: white;
+        }
+        </style>
+</head>
+<body>
+<div class="d2"><img src="2.png" class="i1"><b>设置登录名</b></div>
+<div class="d1"><img src="2.png" class="i1">填写账号信号</div>
+<div class="d2"><img src="3.png" class="i1">设置支付方式</div>
+<div class="d2"><img src="勾.png" class="i1">注册成功</div>
+<br><br><br><br><br><br>
+<div class="d0">
+    <span class="s1">
+        <b>填写验证码</b>
+    </span>
+        <span class="s2">
+            <img src="!.png">
+            校验码已发送到你的手机，15分钟内输入有效，请勿泄露
+    </span><br><br>
+    <form>
+        <span class="s3">手机号码</span><span>15754605685</span>
+        <br><br>
+        <span class="s3">校验码</span><input type="text" class="i2">&nbsp;<span class="s4">51秒后可重新操作</span>
+        <br><br>
+        <span class="s3"></span><span class="s5"><img src="蓝钩.png">校验码已发送至您的手机，请查收</span>
+        <br><br>
+        <span class="s3"></span><input type="button" value="确定" class="b1">
+
+    </form>
+    </div>
+</body>
+</html>

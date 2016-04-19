@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .table1,.table2{
+            width: 100px;
+            height: 30px;
+            background-color: #f5f5f5;
+            float: left;
+            border: 1px solid #d9d9d9;
+            text-align: center;
+            line-height: 30px;
+        }
+        .table1{
+            border-right:none ;
+        }
+        .table1 .d1{
+            width: 201px;
+            height: 400px;
+            border: 1px solid #d9d9d9;
+            position: relative;
+            top: 0px;
+            left: -1px;
+            border-top: none;
+        }
+        .table2 .d2{
+            width: 201px;
+            height: 400px;
+            border: 1px solid #d9d9d9;
+            background-color: white;
+            position: relative;
+            top:1px;
+            display: none;
+        }
+        .table1:hover{
+            border-bottom: none;
+            background-color: white;
+        }
+        .table1:hover .d1{
+            display: block;
+            border-top: none;
+        }
+        .table2:hover{
+            border-bottom: none;
+            background-color: white;
+        }
+        .table2:hover .d2{
+            display: block;
+            border-top:none ;
+            left: -102px;
+        }
+        ul{
+            list-style:none;
+            font: 14px 宋体;
+            width: 100px;
+            height: 400px;
+            position: absolute;
+            top: 5px;
+            left: -28px;
+            text-align: left;
+        }
+      li{
+            width: 200px;
+          height: 40px;
+        }
+        .d01,.d02,.d03,.d04,.d05,.d06{
+            width: 176px;
+            height: 100px;
+            background: red;
+            display: none;
+
+        }
+        .li1:hover .s1{
+            display: none;
+        }
+        .li1:hover .d01{
+            display: block;
+        }
+        .li1:hover{
+            height: 100px;
+        }
+        .li2:hover .s2{
+            display: none;
+        }
+        .li2:hover .d02{
+            display: block;
+        }
+        .li2:hover{
+            height: 100px;
+        }
+        .li3:hover .s3{
+            display: none;
+        }
+        .li3:hover .d03{
+            display: block;
+        }
+        .li3:hover{
+            height: 100px;
+        }
+        .li3:hover .s3{
+            display: none;
+        }
+        .li3:hover .d03{
+            display: block;
+        }
+        .li3:hover{
+            height: 100px;
+        }
+        .li4:hover .s4{
+            display: none;
+        }
+        .li4:hover .d04{
+            display: block;
+        }
+        .li4:hover{
+            height: 100px;
+        }
+        .li5:hover .s5{
+            display: none;
+        }
+        .li5:hover .d05{
+            display: block;
+        }
+        .li5:hover{
+            height: 100px;
+        }
+        .li6:hover .s6{
+            display: none;
+        }
+        .li6:hover .d06{
+            display: block;
+        }
+        .li6:hover{
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="table1">
+    当当图书
+    <div class="d1">
+        <ul class="ul1">
+            <li class="li1"><span class="s1">1 追风筝的人</span><div class="d01">哈哈</div></li>
+            <li class="li2"><span class="s2">2 白夜行</span><div class="d02">哈哈</div></li>
+            <li class="li3"><span class="s3">3 和朋友们一起想办法</span><div class="d03">哈哈</div></li>
+            <li class="li4"><span class="s4">4 从你的全世界路过</span><div class="d04">哈哈</div></li>
+            <li class="li5"><span class="s5">5 摆渡人</span><div class="d05">哈哈</div></li>
+            <li class="li6"><span class="s6">6 百年孤独</span><div class="d06">哈哈</div></li>
+        </ul>
+    </div>
+</div>
+
+<div class="table2">
+    当当童书榜
+    <div class="d2">
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+    盒子模型
+    一、
+    1、标准模式<!DOCTYPE html> 加入这句话之后为CSS标准模式（严格模式strictmode），指的是浏览器按照W3C标准解析的代码
+    2、怪异模式（兼容模式quirkmode）使用浏览器自己的方式来解析代码，由于不同浏览器解析执行的方式不同所以称为怪异模式
+
+
+    二、如何检测当前的执行模式
+        <script>
+        alert(window.top.document.compatMode);
+    </script>
+    输出：CSS1compat   为标准模式
+    输出：backcompat   为怪异模式
+
+    三、标准模式和怪异模式区别
+    标准模式的特点：盒子的实际宽度=div设置的宽度 + border + padding + margin
+    怪异模式(IE盒子模型)的特点：实际宽度=width + margin  使用IE模拟器测试中 IE6/7的宽度为=width + border +margin
+            !!注意：ie6/7/8，在怪异模式下会以此方式显示
+            其他高级浏览器在怪异模式下依然以标准模式显示
+
+    四、如何区分这两种模式
+    1、html5:<!DOCTYPE html> 开头有这句话就是标准模式
+    2、html4:
+       (1)html4<!DOCTYPE HTML PUNLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+       (2)html4<!DOCTYPE HTML PUNLIC "-//W3C//DTD HTML 4.01 //EN""http://www.w3.org/TR/html4/strict.dtd">
+       (3)html4<!DOCTYPE HTML PUNLIC "-//W3C//DTD HTML 4.01 Frameset//EN""http://www.w3.org/TR/html4/frameset.dtd">
+
+   忽略以上dtd的定义，即为怪异模式
+
+   盒子模式只与 内容 内边距  边框  外边距  有关
+
+   html是结构，css是表现，要做到结构和表现相分离
+
+   outline与border的区别为:前者不占据空间，后者占据空间
+
+    -->
+    <style>
+        .d1{
+                     width: 100px;
+                     height: 100px;
+                     outline: 10px solid black;
+                     padding-right: 120px;
+                     /*margin-left: 100px; !*以其元素的边框为基准，做间距*!*/
+                     float: left;
+                 }
+        .d2{
+                     width: 100px;
+                     height: 100px;
+                     outline: 10px solid black;
+                     padding-right: 120px;
+                     /*margin-left: 100px; !*以边框为基准*!*/
+                     float: left;
+                 }
+        .d3{
+            width: 100px;
+            height: 100px;
+            outline: 10px solid black;
+            padding-right: 120px;
+            /*margin-left: 100px; !*以边框为基准*!*/
+        }
+    </style>
+
+</head>
+<body>
+<div class="d1">text</div>
+<div class="d2">text</div>
+<div class="d3">text</div>
+</body>
+</html>

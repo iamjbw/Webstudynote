@@ -1,0 +1,45 @@
+.body{
+  width: 800px;
+  height: 800px;
+  border: 1px solid black;
+}
+.p(@a,@b,@c,@d,@e){
+  width: @a;
+  height: @b;
+  float: @c;
+  background-color: @d;
+  border: @e;
+}
+.l1{
+  .p(200px;50px;left;red;5px solid white)
+}
+.l2{
+  .p(200px;300px;none;red;5px solid white)
+}
+.l3{
+  .p(200px;100px;none;red;5px solid white)
+}
+.lb{
+  .p(210px;400px;left;none;none)
+}
+.m1{
+  .p(200px;410px;left;red;5px solid white)
+}
+.mr{
+  .p(220px;400px;left;none;none)
+}
+.m2{
+  .p(200px;200px;left;red;5px solid white)
+}
+.m3{
+  .p(200px;200px;left;red;5px solid white)
+}
+.rb{
+  .p(220px;400px;left;none;none)
+}
+.r1{
+   .p(200px;100px;left;red;5px solid white)
+ }
+.r2{
+  .p(200px;300px;left;red;5px solid white)
+}

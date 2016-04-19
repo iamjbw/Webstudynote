@@ -1,0 +1,55 @@
+
+.a(@a)when(lightness(@a)>=50%){
+  .a(@a)when(lightness(@a)<80%) {
+    background-color: black;
+    color: white;
+  }
+}
+.a(@a)when(lightness(@a)<50%){
+  background-color: white;
+  color: black;
+}
+.b(@b)when(lightness(@b)>=50%){
+  background-color: red;
+  color: white;
+}
+.b(@b)when(lightness(@b)<50%){
+  background-color: white;
+  color: black;
+}
+.c(@c)when(lightness(@c)>=50%){
+  background-color: blue;
+  color: white;
+}
+.c(@c)when(lightness(@c)<50%){
+  background-color: white;
+  color: black;
+}
+.d(@d)when(lightness(@d)>=50%){
+  background-color: green;
+  color: white;
+}
+.d(@d)when(lightness(@d)<50%){
+  background-color: white;
+  color: black;
+}
+.a1{
+  .a(#fef9f6);
+  width: 100px;
+  height: 100px;
+}
+.a2{
+  .b(#fef9f6);
+  width: 100px;
+  height: 100px;
+}
+.a3{
+  .c(#fef9f6);
+  width: 100px;
+  height: 100px;
+}
+.a4{
+  .d(#fef9f6);
+  width: 100px;
+  height: 100px;
+}

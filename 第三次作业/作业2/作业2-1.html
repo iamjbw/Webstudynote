@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            width: 1000px;
+            height: 600px;
+        }
+        .d2{
+            width: 160px;
+            height: 65px;
+            float: left;
+            line-height: 80px;
+            border-bottom: 2px solid darkgray;
+            text-align: center;
+        }
+        .d1{
+            width: 160px;
+            height: 65px;
+            float: left;
+            line-height: 80px;
+            border-bottom: 2px solid darkgray;
+            text-align: center;
+            border-bottom: 2px solid #ff4103;
+        }
+        .i1{
+            position: relative;
+            top: 8px;
+        }
+        .i2{
+            position: relative;
+            top:-16px;
+            width: 300px;
+            height: 38px;
+            border: none;
+            font-size: 20px;
+        }
+        .d5{
+            float: left;
+            width: 600px;
+            height: 400px;
+        }
+        .s1{
+            color: #fc5f55;
+        }
+        .d6{
+            position: relative;
+            top: -30px;
+            left: 150px;
+            width: 374px;
+            height: 42px;
+            border: 1px solid darkgray;
+        }
+        .y1{
+            width: 150px;
+            height: 36px;
+            font-size: 20px;
+
+        }
+        .se1{
+            height: 42px;
+        }
+        .d5{
+            width: 800px;
+            height: 500px;
+            margin-left: 70px;
+        }
+        .span1{
+            width: 150px;
+            height: 20px;
+            display: inline-block;
+            text-align: center;
+        }
+        .b1{
+            width: 150px;
+            height: 30px;
+            background-color: #ff7f29;
+            color: white;
+            border-radius: 5px;
+        }
+        .show{
+            color: white;
+            width: 180px;
+            height: 42px;
+            background-color: white;
+            text-align: center;
+            line-height: 40px;
+            position: relative;
+            border: 1px solid white;
+            left: 375px;
+            top: -57px;
+
+        }
+        .y1:focus{
+            width: 200px;
+            height: 72px;
+            box-shadow: 1px 1px 8px 1px black;
+        }
+        .b1:active{
+            background-color:#ff4103;
+        }
+        .d6:hover .show{
+            background-color: #ff7f29;
+            border: 1px solid orange;
+        }
+    </style>
+</head>
+<body>
+<div class="d1"><img src="2016-04-06_213211.png" class="i1"><b>设置登录名</b></div>
+<div class="d2"><img src="2.png" class="i1">填写账号信号</div>
+<div class="d2"><img src="3.png" class="i1">设置支付方式</div>
+<div class="d2"><img src="勾.png" class="i1">注册成功</div>
+<div class="d5">
+<form action="作业2-2.html">
+    <br><br><br>
+    <label><span class="span1">所在国家/地区</span><select class="se1">
+        <option>中国大陆</option>
+        <option>中国香港</option>
+        <option>中国台湾</option>
+    </select>
+        <br><br><br>
+    </label>
+    <label><span class="span1">手机号码</span><div class="d6"><img src="手机.png"><input type="text" class="i2"><div class="show">请输入11位手机号码</div></div></label>
+    <label><span class="span1">验证码</span><input type="text" class="y1"></label>
+    <br><br>
+    <label><span class="span1"></span><input type="checkbox">同意<span class="s1">《淘宝服务协议》</span></label>
+    <br><br>
+    <label><span class="span1"></span><input type="submit" value="下一步" class="b1"></label>
+    </form>
+    </div>
+</body>
+</html>

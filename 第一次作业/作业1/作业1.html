@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table{
+            text-align: center;
+            width: 800px;
+            height: 400px;
+            table-layout: fixed;
+            border-spacing:0px 0px;
+            border-collapse: collapse;
+            font-weight: bold;
+            font-family: "Times New Roman";
+            color: darkgray;
+        }
+        table td{
+            height: 42px;
+            border:2px solid dimgray;
+        }
+        table th{
+            color: black;
+        }
+        table tr .th1{
+            border-top-left-radius: 10px;
+            background-color: aquamarine;
+        }
+        table tr .th2{
+            background-color: dodgerblue;
+        }
+        table tr .th3{
+            background-color: cornflowerblue;
+        }
+        table tr .th4{
+            border-top-right-radius: 10px;
+            background-color: blue;
+        }
+        table tr .th01{
+            background-color: aquamarine;
+            border-bottom-left-radius: 10px;
+        }
+        table tr .th02{
+            background-color: dodgerblue;
+        }
+        table tr .th03{
+            background-color: cornflowerblue;
+        }
+        table tr .th04{
+            border-bottom-right-radius: 10px;
+            background-color: blue;
+        }
+        table tr .td1{
+            color: black;
+            background: url("灰色.png");
+        }
+        table tr .td2{
+            color:white;
+            background: url("黑色.png");
+        }
+        table tr .td3{
+            background-color: dimgray;
+        }
+        table tr .td01{
+            border:none;
+        }
+        table tr .td02{
+            color: black;
+            background: url("灰色.png");
+            border-left: 1px solid dimgray;
+        }
+        table th:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<table class="t1">
+    <tr>
+        <th></th>
+        <th class="th1">SMART STARTER</th>
+        <th class="th2">SMART MEDIUM</th>
+        <th class="th3">SMART BUSINESS</th>
+        <th class="th4">SNART DEKYXE</th>
+    </tr>
+    <tr>
+        <td class="td01">STORAGE SPACE</td>
+        <td class="td02">512MB</td>
+        <td class="td2">1GB</td>
+        <td class="td1">2GB</td>
+        <td class="td2">4GB</td>
+    </tr>
+    <tr>
+        <td class="td01">BANDWIDTH</td>
+        <td class="td02">50GB</td>
+        <td class="td2">100GB</td>
+        <td colspan="2" class="td1">150GB</td>
+    </tr>
+    <tr>
+        <td class="td01">MYSQL DATABASES</td>
+        <td class="td02">UNLIMITED</td>
+        <td class="td2">UNLIMITED</td>
+        <td colspan="2" class="td1">UNLIMITED</td>
+    </tr>
+    <tr>
+        <td class="td01">SETUP</td>
+        <td class="td02">19.90$</td>
+        <td class="td2">12.90$</td>
+        <td class="td1">FREE</td>
+        <td rowspan="3" class="td3"></td>
+    </tr>
+    <tr>
+        <td class="td01">PHP5</td>
+        <td  class="td02" colspan="3"></td>
+
+    </tr>
+    <tr>
+        <td class="td01">RUBY ON RAILS</td>
+        <td class="td02"><img src="钩子.png"></td>
+        <td class="td2"><img src="钩子.png"></td>
+        <td class="td1"><img src="钩子.png"></td>
+
+    </tr>
+    <tr>
+        <th class="td01">PRICE PER MONTH</th>
+        <th class="th01">$2.90</th>
+        <th class="th02">$5.90</th>
+        <th class="th03">$9.90</th>
+        <th class="th04">$14.90</th>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="fixed">
+    <ul>
+        <li>脚本之家</li>
+        <li>软件下载<div class="triangle1"></div><div class="triangle2"></div></li>
+        <li>源码下载<div class="triangle1"></div><div class="triangle2"></div></li>
+        <li>在线工具<div class="triangle1"></div><div class="triangle2"></div></li>
+        <li>网页教程基础</li>
+        <li>服务器常用软件</li>
+        <li>手机版</li>
+        <li><img src="images/wechat.png" class="iwechat"><span class="wechat">关注微信</span></li>
+    </ul>
+</div>
+<div class="navigate"></div>
+<div class="header">
+    <ul>
+        <li>网页制作</li>
+        <li>网络编程</li>
+        <li>脚本专栏</li>
+        <li>脚本下载</li>
+        <li>数据库</li>
+        <li>CMS教程</li>
+        <li>电子书籍</li>
+        <li>平面设计</li>
+        <li>媒体动画</li>
+        <li>操作系统</li>
+        <li>网站运营</li>
+        <li>网络安全</li>
+        <li class="textbook">在线手册</li>
+    </ul>
+</div>
+<div class="body">
+<div class="body-left">
+    <div class="top">CSS清除浮动大全共8种方法</div>
+    <div class="textman">作者：佚名 字体：[<span class="max">增加 </span> <span class="max"> 减小</span>] 来源：互联网 时间：06-04 16:19:27 <span class="max">我要评论</span></div>
+    <div class="textblue">在各种浏览器中显示效果也有可能不相同，这样让清除浮动更难了，下面总结8种清除浮动的方法，测试已通过 ie chrome firefox opera，需要的朋友可以参考下</div>
+    <div class="imagesx2"><div class="x2-1"></div><div class="x2-2"></div></div>
+    <br><br>
+    <div class="textlong">
+    清除浮动是每一个 web前台设计师必须掌握的机能。css清除浮动大全，共8种方法。
+    <br><br><br>
+    浮动会使当前标签产生向上浮的效果，同时会影响到前后标签、父级标签的位置及 width height 属性。而且同样的代码，在各种浏览器中显示效果也有可能不相同，这样让清除浮动更难了。解决浮动引起的问题有多种方法，但有些方法在浏览器兼容性方面还有问题。
+    <br><br><br>
+    下面总结8种清除浮动的方法（测试已通过 ie chrome firefox opera，后面三种方法只做了解就可以了）：
+    <br><br><br>
+    1，父级div定义 height
+    </div>
+    <div class="code"><div class="codeline">代码如下：</div> <a href="target1.html" target="if1" class="codecheck">查看代码</a></div>
+    <iframe src="" name="if1" class="ifram1">
+
+    </iframe>
+
+    <div class="textlong">
+        <br><br>
+        原理：父级div手动定义height，就解决了父级div无法自动获取到高度的问题。
+        <br><br><br>
+        优点：简单、代码少、容易掌握
+        <br><br><br>
+        缺点：只适合高度固定的布局，要给出精确的高度，如果高度和父级div不一样时，会产生问题
+        <br><br><br>
+        建议：不推荐使用，只建议高度固定的布局时使用
+        <br><br><br>
+        2，结尾处加空div标签 clear:both
+        <br><br>
+    </div>
+    <div class="code"><div class="codeline">代码如下：</div> <a href="target2.html" target="if2" class="codecheck">查看代码</a></div>
+    <iframe src="" name="if2" class="ifram2">
+
+    </iframe>
+
+
+    <div class="textlong">
+        <br><br>
+        原理：添加一个空div，利用css提高的clear:both清除浮动，让父级div能自动获取到高度
+        <br><br><br>
+        优点：简单、代码少、浏览器支持好、不容易出现怪问题
+        <br><br><br>
+        缺点：不少初学者不理解原理；如果页面浮动布局多，就要增加很多空div，让人感觉很不好
+        <br><br><br>
+        建议：不推荐使用，但此方法是以前主要使用的一种清除浮动方法
+        <br><br><br>
+        3，父级div定义 伪类:after 和 zoom
+        <br><br>
+    </div>
+    <div class="code"><div class="codeline">代码如下：</div> <a href="target3.html" target="if3" class="codecheck">查看代码</a></div>
+    <iframe src="" name="if3" class="ifram3">
+
+    </iframe>
+
+    <div class="textlong">
+        <br><br>
+        原理：IE8以上和非IE浏览器才支持:after，原理和方法2有点类似，zoom(IE转有属性)可解决ie6,ie7浮动问题
+        <br><br><br>
+        优点：浏览器支持好、不容易出现怪问题（目前：大型网站都有使用，如：腾迅，网易，新浪等等）
+        <br><br><br>
+        缺点：代码多、不少初学者不理解原理，要两句代码结合使用才能让主流浏览器都支持。
+        <br><br><br>
+        建议：推荐使用，建议定义公共类，以减少CSS代码。
+        <br><br><br>
+        4，父级div定义 overflow:hidden
+        <br><br>
+    </div>
+    <div class="code"><div class="codeline">代码如下：</div> <a href="target4.html" target="if4" class="codecheck">查看代码</a></div>
+    <iframe src="" name="if4" class="ifram4">
+
+    </iframe>
+
+    <div class="textlong">
+        <br><br>
+        原理：必须定义width或zoom:1，同时不能定义height，使用overflow:hidden时，浏览器会自动检查浮动区域的高度
+        <br><br><br>
+        优点：简单、代码少、浏览器支持好
+        <br><br><br>
+        缺点：不能和position配合使用，因为超出的尺寸的会被隐藏。
+        <br><br><br>
+        建议：只推荐没有使用position或对overflow:hidden理解比较深的朋友使用。
+        <br><br>
+    </div>
+    <div class="code"><div class="codeline">代码如下：</div> <a href="target5.html" target="if5" class="codecheck">查看代码</a></div>
+    <iframe src="" name="if5" class="ifram5">
+
+    </iframe>
+
+    <div class="textlong">
+        <br><br>
+        原理：必须定义width或zoom:1，同时不能定义height，使用overflow:auto时，浏览器会自动检查浮动区域的高度
+        <br><br><br>
+        优点：简单、代码少、浏览器支持好
+        <br><br><br>
+        缺点：内部宽高超过父级div时，会出现滚动条。
+        <br><br><br>
+        建议：不推荐使用，如果你需要出现滚动条或者确保你的代码不会出现滚动条就使用吧。
+        <br><br><br>
+        6，父级div 也一起浮动
+        <br><br>
+    </div>
+    <div class="code"><div class="codeline">代码如下：</div> <a href="target6.html" target="if6" class="codecheck">查看代码</a></div>
+    <iframe src="" name="if6" class="ifram6">
+
+    </iframe>
+
+    <div class="textlong">
+        <br><br>
+        原理：所有代码一起浮动，就变成了一个整体
+        <br><br><br>
+        优点：没有优点
+        <br><br><br>
+        缺点：会产生新的浮动问题。
+        <br><br><br>
+        建议：不推荐使用，只作了解。
+        <br><br><br>
+        7，父级div定义 display:table
+        <br><br>
+    </div>
+    <div class="code"><div class="codeline">代码如下：</div> <a href="target7.html" target="if7" class="codecheck">查看代码</a></div>
+    <iframe src="" name="if7" class="ifram7">
+
+    </iframe>
+
+    <div class="textlong">
+        <br><br>
+        原理：将div属性变成表格
+        <br><br><br>
+        优点：没有优点
+        <br><br><br>
+        缺点：会产生新的未知问题。
+        <br><br><br>
+        建议：不推荐使用，只作了解。
+        <br><br><br>
+        8，结尾处加 br标签 clear:both
+        <br><br>
+    </div>
+    <div class="code"><div class="codeline">代码如下：</div> <a href="target8.html" target="if8" class="codecheck">查看代码</a></div>
+    <iframe src="" name="if8" class="ifram8">
+
+    </iframe>
+
+    <div class="textlong">
+        <br><br>
+        原理：父级div定义zoom:1来解决IE浮动问题，结尾处加 br标签 clear:both
+        <br><br><br>
+        建议：不推荐使用，只作了解。
+        <br><br>
+    </div>
+
+    <div class="down">
+        <ul class="ul1">
+            <li class="li1"></li>
+            <li class="li2"></li>
+            <li class="li3"></li>
+            <li class="li4"></li>
+            <li class="li5"></li>
+            <li class="li6"></li>
+        </ul>
+        <ul class="ul2">
+            <li>html5网页模板</li>
+            <li>网页设计模板</li>
+            <li>网站制作模板</li>
+            <li>响应式网页设计</li>
+            <li>个人网站制作</li>
+            <li>网页设计</li>
+        </ul>
+    </div>
+    <span class="talk">评论（<span class="zero">0</span>人参与，<span class="zero">0</span>条评论）</span>
+    <div class="input">
+        <img src="images/man.png" class="man">
+        <form>
+            <input type="text" value="来说两句吧.." class="input1">
+            <div class="output">
+                <div class="face"></div>
+                <div class="mail"></div>
+                <div class="boutput">发布</div>
+            </div>
+        </form>
+        <div class="footer1"></div>
+        <div class="footer2"></div>
+        <div class="footer3"></div>
+    </div>
+</div>
+<div class="body-right">
+    <div class="service"></div>
+    <div class="article">
+        <span class="article1">文章分类</span>
+        <ul>
+            <li>CSS教程</li>
+            <li>Div+CSS教程</li>
+            <li>浏览器兼容教程</li>
+        </ul>
+        <ul>
+            <li>css3</li>
+            <li>Web标准教程</li>
+            <li>CSS布局实例</li>
+        </ul>
+    </div>
+    <div class="ycenter"></div>
+    <div class="albaba"></div>
+    <div class="habit">
+        <span class="habit1">大家感兴趣的内容</span>
+        <ul>
+            <li><span class="listyle1">1 </span>&nbsp; <span class="listyle2">css控制UL LI的样式详解(推荐)</span></li>
+            <li><span class="listyle1">2 </span>&nbsp;  <span class="listyle2">HTML设置超链接字体颜色和点击后的...</span></li>
+            <li><span class="listyle1">3 </span>&nbsp;  <span class="listyle2">div水平垂直居中的完美解决方案</span></li>
+            <li><span class="listyle1">4 </span>&nbsp;  <span class="listyle2">CSS漂亮搜索框美化代码</span></li>
+            <li><span class="listyle1">5 </span>&nbsp;  <span class="listyle2">CSS首行缩进两个文字</span></li>
+            <li><span class="listyle1">6 </span>&nbsp;  <span class="listyle2">css中的background:transparent到...</span></li>
+            <li><span class="listyle1">7 </span>&nbsp;  <span class="listyle2">css textarea高度自适应,无滚动条</span></li>
+            <li><span class="listyle1">8 </span>&nbsp;  <span class="listyle2">CSS自定义select下拉选择框的样式</span></li>
+            <li><span class="listyle1">9 </span>&nbsp;  <span class="listyle2">css设置全屏背景图片</span></li>
+            <li><span class="listyle1">10 </span>  <span class="listyle2">css中float left和float right的使用说明</span></li>
+        </ul>
+    </div>
+    <div class="vps1"></div>
+    <div class="three"></div>
+    <div class="new">
+        <span class="habit1">最近更新的内容</span>
+        <ul>
+            <li><span class="listyle2">CSS制作箭头图标代码(圆，三角形，椭圆)</span></li>
+            <li><span class="listyle2">深入剖析CSS弹性盒子模型flex</span></li>
+            <li><span class="listyle2">CSS display属性的table表格布局</span></li>
+            <li><span class="listyle2">你应该知道的3个CSS技巧</span></li>
+            <li><span class="listyle2">主流浏览器css兼容问题汇总</span></li>
+            <li><span class="listyle2">css制作黑色经典导航下拉菜单</span></li>
+            <li><span class="listyle2">深入理解CSS选择器优先级</span></li>
+            <li><span class="listyle2">CSS利用伪元素实现导航栏斜线分隔</span></li>
+            <li><span class="listyle2">你指的拥有的CSS下拉菜单效果</span></li>
+            <li><span class="listyle2">css实现移动端图片文字水平居中</span></li>
+        </ul>
+    </div>
+    <div class="border1">
+        <ul>
+            <li class="borderli1"></li>
+        <li class="borderli2"></li>
+            <div class="d1"><div>网站制作模板</div><div>html5网站</div></div>
+        </ul>
+        <ul>
+            <li class="borderli3"></li>
+                <li class="borderli4"></li>
+            <div class="d2"><div>网页设计</div><div>网页设计制作</div></div>
+        </ul>
+        <div class="yuan"><div></div><div class="div2"></div></div>
+    </div>
+    <div class="vps2"></div>
+    <div class="tec"></div>
+
+    <div class="border1">
+        <ul>
+            <li class="borderli5"></li>
+            <li class="borderli6"></li>
+            <div class="d1"><div>个人网站制作</div><div>html5游戏</div></div>
+        </ul>
+        <ul>
+            <li class="borderli7"></li>
+            <li class="borderli8"></li>
+            <div class="d1"><div>响应式网页设计</div><div>CSS网页设计</div></div>
+        </ul>
+        <div class="yuan"><div></div><div class="div2"></div></div>
+    </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--table页，选项卡特效-->
+    <style>
+        .tab1,.tab2{
+            width:150px;
+            height:50px;
+            float: left;
+        }
+        .tab1{
+            background-color: red;
+        }
+        .tab2{
+            background: rosybrown;
+        }
+        .tab1_content{
+            width: 400px;
+            height: 200px;
+            background-color: greenyellow;
+            position: relative;/*不脱离标准流，实现切换时候不会挡住其他元素*/
+            top: 35px;
+            display: block;
+        }
+        .tab2_content{
+            width: 400px;
+            height: 200px;
+            background-color: pink;
+            position: relative;/*不脱离标准流，实现切换时候不会挡住其他元素*/
+            top: 35px;
+            display: none;
+        }
+        .tab1:hover .tab1_content{
+            display: block;
+        }
+        .tab2:hover .tab2_content{
+            display: block;
+        }
+        .ul01{ /*大块的布局一般使用div来布局，小块就要考虑什么效率最高，小块也多用ul列表来写*/
+            font-size: 30px;
+            /*列表类型*/
+            list-style-type:lower-latin;
+            /*列表类型*/
+            list-style-image: url(images/1.png);
+            border: 1px solid red;
+            /*列表默认的padding-left=40px  使用padding-left:0; 可以实现完全左对齐*/
+            /*列表缩进 虽然不常用但是需要记住*/
+            /*list-style-position: inside;*/
+            list-style :none;/*取消列表样式*/
+            list-style: circle inside url(images/1.png);
+            /*也可以携程list-style:circle;*/
+
+        }
+    </style>
+</head>
+<body>
+<!--<div class="tab1">-->
+    <!--选项卡1-->
+    <!--<div class="tab1_content">hello</div>-->
+
+<!--</div>-->
+<!--<div class="tab2">-->
+    <!--选项卡2-->
+    <!--<div class="tab2_content">hello</div>-->
+
+<!--列表 要清楚其是什么元素，块级还是行级-->
+<!--<ol>&lt;!&ndash;有序列表内容前有数字序号&ndash;&gt;-->
+    <!--<li>aaaaa</li>-->
+    <!--<li>bbbbb</li>-->
+    <!--<li>ccccc</li>-->
+<!--</ol>-->
+
+<ul class="ul01"><!--无序列表内容前只有一个标识符-->
+    <li>aaa</li>
+    <li>bbb</li>
+    <li>ccc</li>
+</ul>
+
+<!--<dl>&lt;!&ndash;定义列表 按照层级关系显示&ndash;&gt;-->
+    <!--<dt>计算机图书</dt>-->
+    <!--<dd>java开发</dd>-->
+    <!--<dt>css开发</dt>-->
+    <!--<dd>幼儿图书</dd>-->
+    <!--<dt>一千零一夜</dt>-->
+    <!--<dd>小猪呼呼</dd>-->
+<!--</dl>-->
+</div>
+</body>
+</html>

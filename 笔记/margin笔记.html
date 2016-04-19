@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div1,.div2{
+            width: 200px;
+            height: 100px;
+            border: 1px solid red;
+            /*margin-buttom:20px ;<!--可以使用margin来设置外边距来达到调整div之间距离的目的 -->*/
+
+        }
+        .div1{
+            /*!*margin-right: 100px;!*元素垂直排列时，margin值取最大值，并不是两边距相加*!*!*/
+            /*!*元素水平排列时，margin值为两边距相加*!*/
+            /*!*margin允许有负值*!*/
+            /*!*margin: 20px;!*这样写的话，margin直接赋予四个边*!*!*/
+            /*!*margin: 20px 20px; !*上下，左右*!*!*/
+            /*!*margin: 20px 50px 50px;!*上，左右，下*!*!*/
+            /*margin:20px 20px 20px 20px;!*上右下左*!*/
+            /*padding:50px ;*/
+            /*padding: 100px 500px;!*上下 左右*!*/
+            /*padding: 500px 500px 500px;!*上 左右 下*!*/
+            /*padding: 500px 500px 500px 500px;!*上 右 下 左*! !*与margin一样，但没有负值*!*/ /*font-size: 20px;*/
+            /*font-weight: 100;*/
+              /*font顺序为 style variant weight size family*/
+            font:10px/10px 宋体; /*书写顺序不可改变，斜体，bold，line-height可以不写，size,family必写*/
+            /*background: ;!*这个简写不需要管顺序，可以随便写顺序*!*/
+        }
+        .div2{
+            /*margin-left:200px;*/
+            /*letter-spacing用来设置字符间距（汉字）*/
+
+
+        }
+    </style>
+</head>
+<body>
+<div class="div1">
+这里有一堆文字，哈哈哈哈
+</div>
+</body>
+</html>

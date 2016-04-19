@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--  菜单
+
+    -->
+    <style>
+        body{
+            background: black;
+        }/*作业3使用CSS来实现三角形*/
+        .menu,.menu2,.menu3{
+            list-style: none;/*取消列表样式，一般用来取消菜单前面的点*/
+        }
+        .menu li{
+            position: relative;
+            float: left;
+            width: 100px;
+            height: 30px;
+            background-color: #5c5c5c;
+            color: white;
+            text-align: center;
+            line-height: 30px;/*行高与边框高度一样就能得到垂直居中，行高=文字大小+文字上下的高度*/
+            border-left:1px solid #3c3c3c ;
+            border-right:1px solid #898989 ;/*一级菜单一般使用相对定位，使其不浮动在其他内容之上，而二级菜单应当使用绝对定位去跟着一级菜单*/
+        }
+        .menu3{
+            position: absolute;
+            left:110px;
+            top: 0px;
+            display: none;
+
+        }
+        .menu3 li{
+            float: none;
+            width: 148px;
+            height: 30px;
+            border-bottom: 1px solid #3c3c3c;
+            border-top: 1px solid #898989;
+        }
+        .menu2{
+            position: absolute;
+            left:-40px;
+            display: none;
+        }
+        .menu2 li{
+            float: none;
+            width: 148px;
+            height: 30px;
+            border-bottom: 1px solid #3c3c3c;
+            border-top: 1px solid #898989;
+        }
+        .l1:hover{
+          background-color: #2da0cc;
+        }
+        .l1:hover .menu2{
+            display: block;
+        }
+        .l2:hover{
+            background-color: #2da0cc;
+        }
+        .l3:hover{
+            background-color: #2da0cc;
+        }
+        .l4:hover{
+            background-color: #2da0cc;
+        }
+        .l5:hover{
+            background-color: #2da0cc;
+        }
+        .l3:hover .menu3{
+            display: block;
+        }
+        .l1:hover{
+            background-color: #2da0cc;
+        }
+        .l1:hover .menu2{
+            display: block;
+        }
+        .l2:hover{
+            background-color: #2da0cc;
+        }
+        .l3:hover{
+            background-color: #2da0cc;
+        }
+        .l4:hover{
+            background-color: #2da0cc;
+        }
+        .l5:hover{
+            background-color: #2da0cc;
+        }
+
+        .l01:hover{
+            background-color: #2da0cc;
+        }
+        .l02:hover{
+            background-color: #2da0cc;
+        }
+        .l03:hover{
+            background-color: #2da0cc;
+        }
+        .l04:hover{
+            background-color: #2da0cc;
+        }
+        .l05:hover{
+            background-color: #2da0cc;
+        }
+    </style>
+</head>
+<body>
+<ul class="menu">
+    <li class="l1">菜单1
+        <ul class="menu2">
+            <li class="l2">二级1</li>
+            <li class="l3">二级2
+            <ul class="menu3">
+                <li class="l01">三级1</li>
+                <li class="l02">三级2</li>
+                <li class="l03">三级3</li>
+                <li class="l04">三级4</li>
+                <li class="l05">三级5</li>
+                <li class="l06">三级6</li>
+            </ul>
+            </li>
+            <li class="l4">二级3</li>
+            <li class="l5">二级4</li>
+        </ul>
+    </li>
+    <li>菜单2</li>
+    <li>菜单3</li>
+
+</ul>
+</body>
+</html>

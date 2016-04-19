@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+    浮动：
+    1、浮动的元素会脱离标准流
+    2、如前面有浮动元素，后浮动的元素会依次排列在它的后面
+    3、浮动是以标准流所在位置为起始点
+    4、同高度的元素横向排满后，会被“挤”到下面
+    5、不同高度元素横向排满后，挤下后会被其他元素“卡”住
+    6、clear: 为清除浮动  可以为 clear:left 为清除左浮动 both为清除左右两边
+    7、一个div的范围是由其内容的标准流来决定的,与其内容的浮动无关
+
+    作业2：清除浮动的方法
+
+    -->
+    <style>
+        .d1,.d2{
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        .d1{
+            background: black;
+            float: left;
+        }
+        .d2{
+            background: red;
+            /*float: right;*/
+            float: left;
+        }
+        .d0{
+            border: 1px solid black;
+        }
+        /*.d3{*/
+            /*background: blue;*/
+        /*}*/
+        /*.d4{*/
+            /*background: green;*/
+        /*}*/
+        /*.d5{*/
+            /*background: white;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<div class="d0">
+<div class="d1"></div>
+<div class="d2"></div>
+</div>
+<!--<div class="d3"></div>-->
+<!--<div class="d4"></div>-->
+<!--<div class="d5"></div>-->
+</body>
+</html>

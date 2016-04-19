@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            width: 300px;
+            height: 2000px;
+        }
+        .d1{
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            top: 200px;
+            left: 1300px;
+            border: 2px solid orange;
+            background-color: orangered;
+        }
+        .d2{
+            width: 100px;
+            height: 310px;
+            border: 1px solid black;
+            float: left;
+            position: relative;
+            top: -1px;
+            left: 50px;
+        }
+        ul{
+            list-style: none;
+            margin-top: 0px;
+            padding: 0;
+            line-height: 50px;
+        }
+        li{
+            height: 50px;
+        }
+        .d1:hover{
+            left:1200px;
+        }
+        .d1:hover .li1{
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+<div class="d1">
+    <div class="d2">
+        <ul>
+            <li class="li1">客服1</li>
+            <li>客服2</li>
+            <li>客服3</li>
+            <li>客服4</li>
+            <li>客服5</li>
+            <li>客服6</li>
+        </ul>
+</div>
+</div>
+</body>
+</html>
